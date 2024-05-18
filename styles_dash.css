@@ -1,0 +1,109 @@
+/* Global styles */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+header h1:first-child {
+    font-weight: bold;
+}
+
+header nav {
+    display: none; /* Hide navigation bar for now */
+}
+
+header form {
+    display: flex;
+    align-items: center;
+}
+
+header form input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+header form button {
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+main {
+    display: flex;
+}
+
+aside {
+    width: 20%;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+aside a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    margin-bottom: 10px;
+}
+
+aside a:hover {
+    color: #4CAF50;
+}
+
+aside h2 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+aside ul.categories {
+    list-style: none;
+    padding: 0;
+}
+
+aside ul.categories li {
+    margin-bottom: 5px;
+}
+
+section.notes-feed {
+    width: 80%;
+    padding: 20px;
+}
+
+section.notes-feed h2 {
+    margin-bottom: 15px;
+}
+
+.note-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.note-card h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.note-card p {
+    margin-bottom: 10

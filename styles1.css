@@ -1,0 +1,103 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+	
+}
+
+/* Apply basic styles to the body */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f2f2f2;
+}
+
+/* Wrapper styles */
+.wrapper {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 3px solid #000; /* Add border to wrapper */
+}
+
+/* Header styles */
+.header h1 {
+    font-size: 30px;
+    color: #333;
+    border: 3px solid #000; /* Add border to header */
+    padding: 20px; /* Add some padding to create space between border and text */
+}
+
+/* Navigation styles */
+.navigation {
+	text-align: center;
+    margin-top: 20px;
+    border: 3px solid #000; /* Add border to navigation */
+    padding-bottom: 20px;
+ padding-top: 20px;	/* Add some padding to create space between border and links */
+}
+
+.navigation a {
+    text-decoration: none;
+    color: blue;
+    margin-right: 20px;
+}
+
+/* Content styles */
+.content {
+    display: flex;
+    margin-top: 20px;
+
+}
+
+/* Left column styles */
+.left-column {
+	 margin-right: 10px;
+	text-align: center;
+    flex: 1;
+    border: 3px solid #000; /* Add border to left column */
+    padding: 20px; /* Add some padding to create space between border and content */
+}
+
+.left-column nav ul {
+    list-style-type: none;
+}
+
+.left-column nav ul li {
+    margin-bottom: 10px;
+}
+
+.left-column nav ul li a {
+    text-decoration: none;
+    color: blue;
+}
+
+/* Right column styles */
+.right-column {
+    flex: 3;
+    padding: 20px; 
+	border: 3px solid #000;/* Add some padding to create space between border and content */
+}
+
+.right-column h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+/* Footer styles */
+.footer {
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 3px solid #000; /* Add border to footer */
+    text-align: center;
+    color: #666;
+}
+.note-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}

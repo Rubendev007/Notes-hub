@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="upload_style.css">
+    <title>Upload Notes</title>
+</head>
+<body>
+    
+    <form action="upload_notes.php" method="post" enctype="multipart/form-data">
+	<h2>Upload Notes</h2>
+        <label for="title">Title:</label><br>
+        <input type="text" id="title" name="title" required><br><br>
+
+        <label for="description">Description:</label><br>
+        <textarea id="description" name="description" rows="4" cols="50"></textarea><br><br>
+
+        <label for="course">Course:</label><br>
+        <select id="course" name="course" required>
+            <option value="" disabled selected>Select Course</option>
+            <!-- Replace the options below with dynamic options generated from your database -->
+            <option value="1">Database</option>
+            <option value="2">Scripting Language</option>
+            <option value="3">Numerical Analysis</option>
+            <option value="4">Software Engineering</option>
+            <option value="5">Operating System</option>
+            <!-- End of dynamic options -->
+        </select><br><br>
+
+        <label for="file">Choose a file:</label><br>
+        <input type="file" id="file" name="file" accept=".pdf,.doc,.docx,.txt" required><br><br>
+
+        <input type="submit" value="Upload">
+    </form>
+</body>
+</html>
